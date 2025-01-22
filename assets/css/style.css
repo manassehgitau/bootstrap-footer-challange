@@ -78,7 +78,7 @@ body {
   transition: color 0.3s ease-in;
 }
 
-.newsletter .input-with-button button:hover{
+.newsletter .input-with-button button:hover {
   background-color: #fff;
   color: #000;
 }
@@ -112,7 +112,7 @@ body {
 
 .footer-container .footer-details .footer-info a:hover,
 .footer-container .footer-details .footer-app a:hover,
-.footer-container .footer-details .footer-api a:hover{
+.footer-container .footer-details .footer-api a:hover {
   color: #fff;
 }
 
@@ -137,9 +137,60 @@ body {
 
 .footer-container .footer-details .footer-company-details .link {
   color: #fff;
-  transition: color 0.3s ease ;
+  transition: color 0.3s ease;
 }
 
-.footer-container .footer-details .footer-company-details .link:hover{
+.footer-container .footer-details .footer-company-details .link:hover {
   color: #18d822;
+}
+
+@media (max-width: 962px) {
+
+  .footer-details,
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter {
+    gap: 0;
+    padding-bottom: 40px;
+  }
+
+  .newsletter .subscribe-text {
+
+    padding-bottom: 0;
+  }
+
+  .input-with-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .input-with-button button {
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  .input-with-button input {
+    width: 100px;
+  }
+
+  .footer-container .footer-details .footer-company-details p {
+    text-align: center;
+  }
+
+  .footer-container .footer-details .footer-company-details h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .input-with-button input {
+    width: 10px;
+    height: 10px;
+  }
 }
